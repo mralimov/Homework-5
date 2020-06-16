@@ -13,7 +13,7 @@ $(document).ready(function () {
     var $dateHeading = $('#navbar-subtitle');
     $dateHeading.text(now);
 
-    var saveIcon = "save-regular.svg";
+    var saveIcon = "./image/save-regular.svg";
 
     var storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
 
