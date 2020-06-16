@@ -2,28 +2,40 @@
     height: 48px;
     padding: 2px 10px;
 }
+
 body {
     background-color: #eeeeee;
+   background-image: url('background.jpg');
 }
+
+header  {
+  background-color: #73919b;
+  
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
 
 input {
   background: transparent;
   border: none;
 
-  /* so cursor appears */
   padding-left: 3px;
 }
 
 
 .navbar {
-  /* background-color: #73919b;   */
+
   background-color: #73919b;  
   color: #b6d7e2;  
 
-  /* pulls everything down to push up against bottom border */
+
   padding-bottom: 0;
   
-  /* creates solid line for the bottom border  */
+ 
   border-bottom: solid;
   border-bottom-color: #ccc;
   width: 100%;
@@ -33,30 +45,30 @@ input {
 #navbar-title {
   padding: 0px;
   font-size: 30px;
-  color: linen!important; /* TODO can we do this without the !important */
+  color: linen!important; 
   text-align: center;
 }
 
 #navbar-subtitle {
   padding: 2px;
   font-size: 15px;
-  color: black!important; /* TODO can we do this without the !important */
+  color: black!important; 
   text-align: center;
+  
 }
 
 .col-md-1, .col-md-2, .col-md-9 {
   padding: 0;
 }
 
-/* #planner */
+
 #plannerContainer {
-  /* background-color: #73919b;   */
-  background-color: #b6d7e2;  
-  /* provides spacing between the top and bottom nav bars and the content */
-  margin-top: 20px;
+  background-color: #73919b;
+ margin-top: 20px;
   margin-bottom: 80px;
+  opacity: 10;
   
-  /* provide spaceing around the text */
+  
   padding: 40px;
 } 
 
@@ -69,7 +81,6 @@ input {
   border-radius: 15px;
 }
 
-/* style container with time in it */
 .timeBox {
   background-color: linen;  
   color: black;
@@ -81,7 +92,6 @@ input {
   font-size: 1em;
 }
 
-/* style container with daily plan */
 .dailyPlan {
   color: black;  
   font-size: 12pt;
@@ -93,7 +103,6 @@ input {
   background-color: darkturquoise;
   color: linen;
   border-radius: 0px 15px 15px 0px;
-  /* float: right; */
   font-size: 1.5em;
   width: 100%;
   height: 100%;
@@ -101,20 +110,16 @@ input {
 }
 
 .footer {
-  /* set text properties */
   background-color: #666;
   
-  /* sets height of footer*/
   height: 10%;
   
-  /* sets properties for footer border*/
   border-top: solid;
   border-top-color: #b6d7e2;  
   border-top-width: 8px;
 }
 
 .footer-text, .header-text {
-  /* forces text across the entire screen so it has a center */
   width: 100%;
   text-align: center;
 
@@ -122,10 +127,9 @@ input {
   color:linen; 
 }
 
-/* media query for screen size to be applied to center text to switch at same time as navbar */
 @media (max-width: 768px) {
   .container-fluid {
-    /* removes paddding on either side */
+  
     padding-left: 0;
     padding-right: 0;
   }
